@@ -11,7 +11,7 @@ public class WelcomeController {
     @FXML
     private JFXButton exitbutton;
 
-    private void exitConfirm() {
+    public void exitConfirm() {
         Stage stage = (Stage) exitbutton.getScene().getWindow();
         stage.close();
     }
