@@ -1,7 +1,14 @@
 package com.frankxy.hcm;
 
 import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXPasswordField;
+import com.jfoenix.controls.JFXTextField;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
+import javafx.scene.effect.GaussianBlur;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
@@ -15,11 +22,17 @@ public class WelcomeController {
      */
     private double yOffset = 0;
     @FXML
-    private Pane welcomepane;
+    private AnchorPane welcomepane;
+    @FXML
+    private ImageView welcomebackground;
     @FXML
     private Pane dragpane;
     @FXML
     private JFXButton exitbutton;
+    @FXML
+    private JFXTextField usernamefield;
+    @FXML
+    private JFXPasswordField passwordfield;
 
     /**
      * exitConfirm
