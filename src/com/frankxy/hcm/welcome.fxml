@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane fx:id="welcomepane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="400.0" style="-fx-background-color: WHITE; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.frankxy.hcm.WelcomeController">
-   <children>
-      <JFXButton fx:id="exitbutton" ellipsisString="" layoutX="362.0" layoutY="14.0" onMouseClicked="#exitConfirm" prefHeight="24.0" prefWidth="24.0" style="-fx-background-image: url('ExitButton.png');" />
-   </children>
+<Pane fx:id="welcomepane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="650.0" prefWidth="400.0" style="-fx-background-color: WHITE; -fx-background-radius: 25;"
+      xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.frankxy.hcm.WelcomeController">
+   <ImageView fitHeight="650.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@picture/Welcome_1.png"/>
+   </ImageView>
+   <JFXButton fx:id="exitbutton" ellipsisString="" layoutX="362.0" layoutY="14.0" onMouseClicked="#exitConfirm"
+              prefHeight="24.0" prefWidth="24.0" style="-fx-background-image: url('ExitButton.png');"/>
+   <Pane fx:id="dragpane" onMouseDragged="#dragStage" prefHeight="25.0" prefWidth="400.0"/>
 </Pane>
